@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  background-image: url(/images/1.jpg);
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #ffe5ce;
+}
+a:link,
+a:visited {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: #444;
+  padding: 20px;
+  display: inline-block; /*Adds padding to the top, right, bottom and left */
+}
+
+a:hover {
+  color: #fbb270;
+}
+
+a:link:last-child {
+  padding-right: 0;
+}
+nav {
+  width: 80%;
+  /* margin-left: auto;
+    margin-right: auto; */
+  margin-inline: auto;
+}

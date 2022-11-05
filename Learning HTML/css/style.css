@@ -1,0 +1,63 @@
+body{
+    background-color: #afafaf;
+}
+h1,h2,p{    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h1{
+    font-size: 52px;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgb(22, 22, 203);
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: #a93b2fb4;
+    background-color: rgb(204, 200, 200);
+    /* border: 5px dotted black; */
+    border-top:5px dotted black ;
+    border-bottom:5px dotted black ;
+}
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+a:link{
+    color: green;
+    text-decoration: none; /* removes the underline under the links*/
+}
+a:visited{
+color: orangered;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    background-color: #fff;
+}
+li{
+    list-style: none;/*Removes bulletins*/
+}
+li:first-child{
+    color: red;/*Colors the first element in a list*/
+}
+li:last-child{
+    color: blue;/*Colors the first element in a list*/
+}
+li:nth-child(even){
+    color: red;/*colors the list element in anything specified e.g odd, even, and any numbers*/
+}
+.first-paragraph{
+    color: navajowhite; /* the (.) symbol is a class selector*/
+}
+#section-1{
+color: aqua; /*the (#) symbol is an id selector */
+}
+img{
+    width: 100%;
+    height: auto;
+}
