@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
-.background {
-  background-image: url(/images/1.jpg);
-  background-repeat: no-repeat;
+body{
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
 }
 a:link,
 a:visited {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*has been overriden by the font-family in the body */
   text-decoration: none;
   color: #444;
   padding: 20px;
@@ -32,4 +32,42 @@ nav {
   /* margin-left: auto;
     margin-right: auto; */
   margin-inline: auto;
+}
+#header{
+  color: red;
+}
+.header{
+  color: blue; 
+}
+h1{
+  color: olivedrab;
+}
+h1.header{ 
+  color: purple !important; 
+}
+.parent{
+  width: 300px;
+  height: 300px;
+  background-color: brown;
+  margin-inline:auto;
+  border: 1px solid black;
+
+  position:relative;
+}
+.child{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+
+  position: relative;
+  top:50px;
+  left: 80%;
+  right: 0;
+}
+.parent::after{
+  content: "mamama";
+  display: block;
+  width: 200px;
+  height: 150px;
+  background-color: green;  
 }

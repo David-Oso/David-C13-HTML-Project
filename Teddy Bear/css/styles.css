@@ -1,0 +1,116 @@
+body{
+    justify-content: center;
+}
+
+.main_body{
+    background-color: #f4bad6;
+    height: 500px;
+    width: 400px;
+    position: relative;
+}
+
+.main_body div{
+    position: absolute;
+}
+
+.right_ear{
+    background: #f62389;
+    left: 50px;
+    height:150px;
+    width: 120px;
+    border-radius: 50%;
+     box-shadow: 0 0 0 25px #fff4e4 inset; 
+
+}
+
+.left_ear{
+    background: #f62389;
+    right: 50px;
+    height:150px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 25px #fff4e4 inset; 
+}
+
+.head{
+    background-color: #fff4e4;;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.eyes_one{
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: 2px -2px 0 10px  inset;
+    right: 150px;
+    top: 45%;
+    animation: eye-blink 5s infinite; 
+}
+
+.eyes_two{
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: 2px -2px 0 10px  inset;
+    left: 150px;
+    top: 45%;
+    animation-name: eye-blink;
+    animation-iteration-count: 2;
+    animation-timing-function: cubic;
+    
+    animation: eye-blink 5s infinite; 
+}
+
+@keyframes first {
+    from{left: 0px;}
+    to{left: 200px}
+    
+}
+
+
+@keyframes eye-blink {
+    22%{
+        transform: scaleY(1);
+    }
+    40%{
+        transform: scaleY(0.2);
+    }
+    26%{
+        transform: scaleY(1);
+    }
+    28%{
+        transform: scaleY(1);
+    }
+    30%{
+        transform: scaleY(1);
+    }
+    65%{
+        transform: scaleY(1);
+    }
+    67%{
+        transform: scaleY(0.2);
+    }
+    69%{
+        transform: scaleY(1);
+    }
+}
+.mouth{
+    background-color: #f62389;
+    bottom: 10px;
+    border-radius: 50%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 150px;
+    width: 140px;
+}
+
+
